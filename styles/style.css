@@ -150,6 +150,42 @@ main .second-section {
     text-align: start;
 }
 
+.third-section {
+    width: 70rem;
+    height: 30rem;
+    margin: 80px auto;
+    margin-top: 0px;
+}
+.third-section .section-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.third-section .section-cards .section-card {
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid #FF900E;
+    margin-top: 5rem;
+    text-align: center;
+}
+.third-section h1 , .third-section > p{
+    margin-left: 2rem;
+}
+.third-section .section-cards .section-card img {
+    margin: 1rem auto;
+}
+
+/*fourt section*/
+.fourth-section {
+    width: 70rem;
+    height: 18rem;
+    margin:3rem auto;
+}
+.fourth-section .fourth-section-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.5rem auto;
+    filter: grayscale(100%);
+}
 
 
 
