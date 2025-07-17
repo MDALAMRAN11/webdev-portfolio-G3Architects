@@ -1,0 +1,83 @@
+.btn-primary{
+    background-color: #FF900E;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/*HEADER*/
+header{
+    margin-bottom: 5rem;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+  /*header1*/
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .nav-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-left h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+nav .nav-right a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav-right li{
+    list-style: none;
+}
+nav .nav-right {
+    width: 25rem;
+}
+   /*header2*/
+header section {
+    width: 50rem;
+    height: 46rem;
+    margin: 30px auto;
+}
+section .section-intro{
+    text-align: center;
+}
+
+section .section-intro h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+section .section-intro p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+section .section-img img {
+    width: 100%;
+    margin-top: 1.8rem;
+}
+
+
+
+
+
+
+/*responsive for mobile device*/
+@media screen and (max-width: 575px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .nav-right{
+        display: flex;
+        justify-content: space-between;
+    }
+   header section{
+    width: 95vw;
+    margin: 2rem auto;
+   } 
+}
