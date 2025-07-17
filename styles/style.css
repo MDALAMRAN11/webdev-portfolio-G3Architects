@@ -6,6 +6,18 @@
     border: none;
     border-radius: 10px;
 }
+.font-primary {
+    color: #FF900E;
+    font-weight: 600;
+}
+.font-black {
+    color: black;
+    font-weight: 600;
+}
+.font-gray{
+    color: #727272;
+    font-weight: 400;
+}
 
 /*HEADER*/
 header{
@@ -62,6 +74,83 @@ section .section-img img {
 }
 
 
+/*main*/
+/*first section*/
+main .first-section {
+    width: 50rem;
+    height: 28rem;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-section .image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    height: 25rem;
+    width: 25rem;
+}
+.first-section .image-collage img {
+    width: 100%;
+    height: 100%;
+}
+.first-section .feature-intro {
+    height: 15rem;
+    width: 20rem;
+}.feature-intro h3{
+    font-size: 3rem;
+    margin: 0 auto;
+}
+/*second section*/
+main .second-section {
+    width: 70rem;
+    height: 70rem;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}.second-section .section-intro {
+    width: 30rem;
+    height: 60rem;
+}
+.second-section .section-imgM {
+    width: 35rem;
+    height: 52rem;
+    position: relative;
+}
+.second-section .section-imgM img {
+    width: 100%;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+.second-section .section-imgM .img-intro {
+    position: absolute;
+    bottom: -7rem;
+    left: -2rem;
+}
+
+.second-section .section-intro .intro-card {
+    width: 30rem;
+    height: 10rem;
+    padding: 10px;
+    background-color: #FCFCFC;
+    box-shadow: 5px 5px 10px gray;
+    margin: 10px;
+}
+.second-section .section-intro .intro-heading {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-top: 0px;
+}
+.second-section .section-intro .intro-description {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+}
+
+
 
 
 
@@ -74,9 +163,20 @@ section .section-img img {
     }
     nav .nav-right{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
    header section{
+    width: 95vw;
+    margin: 2rem auto;
+   } 
+}
+/* responsive for tablet device*/
+@media screen and (max-width: 992px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header section{
     width: 95vw;
     margin: 2rem auto;
    } 
