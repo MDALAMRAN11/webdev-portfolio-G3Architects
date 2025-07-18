@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*all shared items*/
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .btn-primary{
     background-color: #FF900E;
     font-size: 1.3rem;
@@ -18,202 +36,191 @@
     color: #727272;
     font-weight: 400;
 }
-
-/*HEADER*/
-header{
-    margin-bottom: 5rem;
-    background-color: rgba(255, 144, 14, 0.1);
-}
-  /*header1*/
-header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-nav .nav-right {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.nav-left h2{
+.font-vbig {
     font-size: 3rem;
     font-weight: bold;
 }
-nav .nav-right a{
+.font-big{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.font-small{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/*header section*/
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+header nav, header section {
+    width: 85vw;
+    margin: 0 auto;
+}
+header .nav-right a{
     text-decoration: none;
     color: black;
 }
-nav .nav-right li{
+header .nav-right li {
     list-style: none;
 }
-nav .nav-right {
-    width: 25rem;
+header .nav-right a{
+    margin: 1.5vw;
 }
-   /*header2*/
+
 header section {
-    width: 50rem;
-    height: 46rem;
-    margin: 30px auto;
-}
-section .section-intro{
     text-align: center;
 }
-
-section .section-intro h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0 auto;
-}
-section .section-intro p {
-    font-size: 1rem;
-    font-weight: 300;
-}
-section .section-img img {
+header section .section-img img{
     width: 100%;
-    margin-top: 1.8rem;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
 }
 
-
-/*main*/
-/*first section*/
-main .first-section {
-    width: 50rem;
-    height: 28rem;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*main section*/
+main > section , footer > section{
+    width: 85vw;
+    margin: 20vh auto;
 }
-.first-section .image-collage {
+main .first-section .image-collage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 5px;
-    column-gap: 5px;
-    height: 25rem;
-    width: 25rem;
+    gap: 0.8rem;
+    margin: auto 5vw;
 }
-.first-section .image-collage img {
+main .first-section .image-collage img {
     width: 100%;
-    height: 100%;
 }
-.first-section .feature-intro {
-    height: 15rem;
-    width: 20rem;
-}.feature-intro h3{
-    font-size: 3rem;
-    margin: 0 auto;
-}
-/*second section*/
-main .second-section {
-    width: 70rem;
-    height: 70rem;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-}.second-section .section-intro {
+main .first-section .feature-intro {
+    margin-right: 8vw;
     width: 30rem;
-    height: 60rem;
 }
+
+
+/*second section*/
+.second-section {
+    align-items: center;
+}
+.second-section .section-intro {
+    width: 50vw;
+    margin-right: 5vw;
+}
+.second-section .section-intro .intro .intro-card {
+    margin: 3vh auto;
+    box-shadow: 2px 2px 5px 5px gray;
+    padding: 10px 20px;
+}
+.second-section .section-intro .intro .intro-card h5, .second-section .section-intro .intro .intro-card p {
+    margin: 0;
+}
+.second-section .section-intro .intro .intro-card h5{
+    font-size: 1.5rem;
+}
+
+
+
 .second-section .section-imgM {
-    width: 35rem;
-    height: 52rem;
     position: relative;
-}
-.second-section .section-imgM img {
-    width: 100%;
-    height: 100%;
-    padding-top: 2.5rem;
+    margin-left: 5vw;
 }
 .second-section .section-imgM .img-intro {
     position: absolute;
-    bottom: -7rem;
-    left: -2rem;
+    bottom: -4vh;
+    left: -5vw;
+}
+.second-section .section-imgM img{
+    width: 100%;
 }
 
-.second-section .section-intro .intro-card {
-    width: 30rem;
-    height: 10rem;
-    padding: 10px;
-    background-color: #FCFCFC;
-    box-shadow: 5px 5px 10px gray;
-    margin: 10px;
-}
-.second-section .section-intro .intro-heading {
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: start;
-    margin-top: 0px;
-}
-.second-section .section-intro .intro-description {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: start;
-}
-
-.third-section {
-    width: 70rem;
-    height: 30rem;
-    margin: 80px auto;
-    margin-top: 0px;
-}
-.third-section .section-cards{
-    display: flex;
-    justify-content: space-around;
+/*third section*/
+.third-section .section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6vw;
 }
 .third-section .section-cards .section-card {
-    width: 12rem;
-    height: 12rem;
     border: 1px solid #FF900E;
-    margin-top: 5rem;
     text-align: center;
 }
-.third-section h1 , .third-section > p{
-    margin-left: 2rem;
-}
-.third-section .section-cards .section-card img {
-    margin: 1rem auto;
+.third-section .section-cards .section-card h3, .third-section .section-cards .section-card p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/*fourt section*/
-.fourth-section {
-    width: 70rem;
-    height: 18rem;
-    margin:3rem auto;
+/*fourth section*/
+.fourth-section .section-intro h1, .fourth-section .section-intro p {
+    text-align: center;
 }
 .fourth-section .fourth-section-img {
-    display: flex;
-    justify-content: space-between;
-    margin: 3.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5vw;
+    margin: 5vw auto;
+}
+.fourth-section .fourth-section-img img {
+    width: 100%;
     filter: grayscale(100%);
 }
 
-
-
-
-
-/*responsive for mobile device*/
-@media screen and (max-width: 575px) {
-    header nav {
-        display: flex;
-        flex-direction: column;
-    }
-    nav .nav-right{
-        display: flex;
-        justify-content: space-around;
-    }
-   header section{
-    width: 95vw;
-    margin: 2rem auto;
-   } 
+/*footer*/
+footer section div {
+    position: relative;
+    height: 20vh;
+    background-color: #FFF4E7;
+    border-radius: 20px;
 }
-/* responsive for tablet device*/
-@media screen and (max-width: 992px) {
-    header nav {
-        display: flex;
+footer section p {
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/*responsive for mobile devices*/
+@media screen and (max-width:575px) {
+    main > section , footer > section{
+    width: 98vw;
+    margin: 8vh auto;
+}
+    header nav, main .first-section, main .second-section {
         flex-direction: column;
     }
-    header section{
-    width: 95vw;
-    margin: 2rem auto;
-   } 
+    main .third-section .section-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fourth-section .fourth-section-img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main .first-section .image-collage {
+        grid-template-columns: 1fr;
+    }
+    footer section div{
+        height: 8vh;
+    }
+}
+
+/*responsive for tablet devices*/
+@media screen and (min-width:575.1px) and (max-width: 992px) {
+    main > section , footer > section{
+    width: 98vw;
+    margin: 8vh auto;
+}
+    header nav .nav-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .first-section, main .second-section {
+        flex-direction: column;
+    }
+    .second-section .section-intro .intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vw;
+    }
+    .third-section .section-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
