@@ -200,6 +200,9 @@ footer section p {
     footer section div{
         height: 8vh;
     }
+    main .first-section .feature-intro{
+        width: auto;
+    }
 }
 
 /*responsive for tablet devices*/
